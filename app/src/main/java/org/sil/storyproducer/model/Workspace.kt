@@ -86,7 +86,11 @@ object Workspace{
 
     fun setupWorkspacePath(context: Context, uri: Uri) {
         try {
-            // Issue 539 - Reset Story info to detach from current Story, if any
+            // Issue 539 - Reset Story info to detach from current Story
+            activeStory = emptyStory()
+
+            // Initiate new workspace path
+            // Issue 539 - Reset Story info to detach from current Story
             activeStory = emptyStory()
 
             // Initiate new workspace path
